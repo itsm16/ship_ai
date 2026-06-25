@@ -13,8 +13,9 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Streamyst",
-  description: "Media Forwarding",
+  title: "SHIP_AI | Engineered for Velocity",
+  description:
+    "The world's most aggressive CI/CD engine for AI-native engineering teams. Strip away the noise and ship code at the speed of thought.",
 };
 
 export default function RootLayout({
@@ -24,6 +25,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="dark">
+      <head>
+        <link
+          rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+        />
+      </head>
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
         <GlobalProviders>{children}</GlobalProviders>
       </body>

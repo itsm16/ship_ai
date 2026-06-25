@@ -1,6 +1,12 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 
+/* Material Symbols */
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+  vertical-align: middle;
+}
+
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
@@ -42,6 +48,15 @@
   --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-ring: var(--sidebar-ring);
+  --color-outline-variant: var(--outline-variant);
+  --color-surface-container-lowest: var(--surface-container-lowest);
+  --color-surface-container-low: var(--surface-container-low);
+  --color-surface-container: var(--surface-container);
+  --color-surface-container-high: var(--surface-container-high);
+  --color-surface-container-highest: var(--surface-container-highest);
+  --color-on-surface-variant: var(--on-surface-variant);
+  --color-primary-container: var(--primary-container);
+  --color-on-surface: var(--on-surface);
 }
 
 :root {
@@ -77,6 +92,15 @@
   --sidebar-accent-foreground: oklch(0.205 0 0);
   --sidebar-border: oklch(0.922 0 0);
   --sidebar-ring: oklch(0.708 0 0);
+  --outline-variant: #c4b7b5;
+  --surface-container-lowest: #ffffff;
+  --surface-container-low: #f7f7f8;
+  --surface-container: #f0f0f1;
+  --surface-container-high: #e4e4e5;
+  --surface-container-highest: #d4d4d6;
+  --on-surface-variant: #49454f;
+  --primary-container: #ffdad6;
+  --on-surface: #1c1b1f;
 }
 
 .dark {
@@ -103,14 +127,23 @@
   --chart-3: oklch(0.769 0.188 70.08);
   --chart-4: oklch(0.627 0.265 303.9);
   --chart-5: oklch(0.645 0.246 16.439);
-  --sidebar: oklch(0.205 0 0);
-  --sidebar-foreground: oklch(0.985 0 0);
-  --sidebar-primary: oklch(0.488 0.243 264.376);
-  --sidebar-primary-foreground: oklch(0.985 0 0);
-  --sidebar-accent: oklch(0.269 0 0);
-  --sidebar-accent-foreground: oklch(0.985 0 0);
-  --sidebar-border: oklch(1 0 0 / 10%);
-  --sidebar-ring: oklch(0.556 0 0);
+  --sidebar: #000000;
+  --sidebar-foreground: #e2e2e5;
+  --sidebar-primary: #ffb4ac;
+  --sidebar-primary-foreground: #000000;
+  --sidebar-accent: #1a1c1e;
+  --sidebar-accent-foreground: #e2e2e5;
+  --sidebar-border: rgba(255, 255, 255, 0.1);
+  --sidebar-ring: #ffb4ac;
+  --outline-variant: #524342;
+  --surface-container-lowest: #0c0e10;
+  --surface-container-low: #1a1c1e;
+  --surface-container: #1e2022;
+  --surface-container-high: #282a2c;
+  --surface-container-highest: #333537;
+  --on-surface-variant: #d7c2bf;
+  --primary-container: #ffb4ac;
+  --on-surface: #e2e2e5;
 }
 
 @layer base {
